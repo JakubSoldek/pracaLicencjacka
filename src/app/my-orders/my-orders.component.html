@@ -1,0 +1,17 @@
+<h1>ZAMÓWIENIA</h1>
+<table class="table table-light">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Data</th>
+      <!-- <th></th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of (orders$ | async)">
+      <td>{{ order.payload.val().shipping.name }}</td>
+      <td>{{ order.payload.val().datePlaced | date }}</td>
+      <!-- <td><a href="#">View</a></td> -->
+    </tr>
+  </tbody>
+</table>

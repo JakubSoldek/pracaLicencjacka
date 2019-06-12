@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "zdrowysklep",
+    "development": "zdrowysklep-cc115",
+    "staging": "zdrowysklep-cc115"
+  }
+}
